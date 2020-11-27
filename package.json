@@ -1,8 +1,8 @@
 {
   "name": "strava-box",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "🏃‍♂️🏃‍♀️ Update a gist to contain your weekly Strava distances",
-  "author": "John Pham <john@pham.codes>",
+  "author": "Qifan Yang<14819756+underwindfall@users.noreply.github.com>",
   "license": "ISC",
   "dependencies": {
     "@octokit/rest": "^16.28.2",

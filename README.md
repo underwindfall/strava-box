@@ -1,38 +1,36 @@
-<p align="center">
-  <img width="400" src="https://i.imgur.com/v8XouyY.png">
-  <h3 align="center">strava-box</h3>
-  <p align="center">Update a gist to contain your YTD Strava distances</p>
-</p>
+# Strava-stats ![Update gist with Strava stats](https://github.com/underwindfall/wakabox-stats/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg)
 
----
+Helper Project to display wakabox stats for github profile pages.
 
-## Previous Work
+# Preview
 
-This repo is based off of [matchai's waka-box](https://github.com/matchai/waka-box).
+```
+Running         47.81 km █████████████████▎░  5.13/h
+Swimming         0.00 km ░░░░░░░░░░░░░░░░░░░  0.00/h
+Cycling          4.72 km █▋░░░░░░░░░░░░░░░░░ 14.05/h
+Last month      31.37 km      7 achievements   4:24h
+```
 
-## Setup
+# Lincese
 
-### Prep work
+MIT License
 
-1. Create a new public GitHub Gist (https://gist.github.com/)
-1. Create a token with the `gist` scope and copy it. (https://github.com/settings/tokens/new)
-1. Create a Strava Application (https://www.strava.com/settings/api)
-    - Copy the `Client ID`, `Client Secret`, and `Refresh Token`
-1. Get your `Athlete Token` by going to https://www.strava.com, click your profile photo in the top right corner. Copy the ID in the url. `https://www.strava.com/athletes/`**`12345`**
+Copyright (c) 2022 Qifan Yang
 
-### Project setup
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-1. Fork this repo
-1. Log into CircleCI with your GitHub (https://circleci.com/vcs-authorize/)
-1. Click on "Add Projects" on the sidebar
-1. Set up a project with the newly created fork
-1. Go to Project Settings > Environment Variables
-1. Add the following environment variables:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-- **GIST_ID:** The ID portion from your gist url `https://gist.github.com/<github username>/`**`6d5f84419863089a167387da62dd7081`**.
-- **GITHUB_TOKEN:** The GitHub token generated above.
-- **STRAVA_ATHLETE_ID:** The ID you got from visiting your profile page.
-- **STRAVA_CLIENT_ID:** The client ID you got from the Strava API page.
-- **STRAVA_CLIENT_SECRET:** The client secret you got from the Strava API page.
-- **STRAVA_REFRESH_TOKEN:** The refresh token you got from the Strava API page.
-- (optional) **UNITS:** `miles` or `metres` or `meters` (default)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

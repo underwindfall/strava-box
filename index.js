@@ -31,20 +31,20 @@ async function main() {
 async function getStravaToken() {
   // default env vars
   let cache = {
-    // stravaAccessToken: stravaAccessToken,
+    stravaAccessToken: stravaAccessToken,
     stravaRefreshToken: stravaRefreshToken
   };
   // read cache from disk
-  try {
-    const jsonStr = fs.readFileSync(AUTH_CACHE_FILE);
-    const c = JSON.parse(jsonStr);
-    Object.keys(c).forEach(key => {
-      cache[key] = c[key];
-    });
-  } catch (error) {
-    console.log(error);
-  }
-  console.debug(`ref: ${cache.stravaRefreshToken.substring(0, 6)}`);
+  // try {
+  //   const jsonStr = fs.readFileSync(AUTH_CACHE_FILE);
+  //   const c = JSON.parse(jsonStr);
+  //   Object.keys(c).forEach(key => {
+  //     cache[key] = c[key];
+  //   });
+  // } catch (error) {
+  //   console.log(error);
+  // }
+  // console.debug(`ref: ${cache.stravaRefreshToken.substring(0, 6)}`);
 
   // get new tokens
   const data = await fetch("https://www.strava.com/oauth/token", {
@@ -59,11 +59,11 @@ async function getStravaToken() {
   }).then(data => data.json());
   cache.stravaAccessToken = data.access_token;
   cache.stravaRefreshToken = data.refresh_token;
-  console.debug(`acc: ${cache.stravaAccessToken.substring(0, 6)}`);
-  console.debug(`ref: ${cache.stravaRefreshToken.substring(0, 6)}`);
+  // console.debug(`acc: ${cache.stravaAccessToken.substring(0, 6)}`);
+  // console.debug(`ref: ${cache.stravaRefreshToken.substring(0, 6)}`);
 
   // save to disk
-  fs.writeFileSync(AUTH_CACHE_FILE, JSON.stringify(cache));
+  // fs.writeFileSync(AUTH_CACHE_FILE, JSON.stringify(cache));
 
   return cache.stravaAccessToken;
 }

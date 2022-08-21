@@ -10,9 +10,9 @@ const {
   STRAVA_ACCESS_TOKEN: stravaAccessToken,
   STRAVA_REFRESH_TOKEN: stravaRefreshToken,
   STRAVA_CLIENT_ID: stravaClientId,
-  STRAVA_CLIENT_SECRET: stravaClientSecret
+  STRAVA_CLIENT_SECRET: stravaClientSecret,
+  UNITS: units
 } = process.env;
-const units = "meters";
 const API_BASE = "https://www.strava.com/api/v3/athletes/";
 const AUTH_CACHE_FILE = "strava-auth.json";
 
@@ -31,7 +31,7 @@ async function main() {
 async function getStravaToken() {
   // default env vars
   let cache = {
-    stravaAccessToken: stravaAccessToken,
+    // stravaAccessToken: stravaAccessToken,
     stravaRefreshToken: stravaRefreshToken
   };
   // read cache from disk

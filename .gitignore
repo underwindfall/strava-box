@@ -58,6 +58,7 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
+strava-auth.json
 
 # dotenv environment variables file
 .env

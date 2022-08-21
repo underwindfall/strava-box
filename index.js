@@ -10,9 +10,9 @@ const {
   STRAVA_ACCESS_TOKEN: stravaAccessToken,
   STRAVA_REFRESH_TOKEN: stravaRefreshToken,
   STRAVA_CLIENT_ID: stravaClientId,
-  STRAVA_CLIENT_SECRET: stravaClientSecret,
-  UNITS: units
+  STRAVA_CLIENT_SECRET: stravaClientSecret
 } = process.env;
+const units = "meters";
 const API_BASE = "https://www.strava.com/api/v3/athletes/";
 const AUTH_CACHE_FILE = "strava-auth.json";
 

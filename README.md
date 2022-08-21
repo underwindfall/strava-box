@@ -1,4 +1,4 @@
-# Strava-stats ![Update gist with Strava stats](https://github.com/underwindfall/wakabox-stats/workflows/Update%20gist%20with%20WakaTime%20stats/badge.svg)
+# Strava-stats [![Update gist with Strava stats](https://github.com/underwindfall/strava-box/actions/workflows/strava.yml/badge.svg?event=schedule)](https://github.com/underwindfall/strava-box/actions/workflows/strava.yml)
 
 Helper Project to display wakabox stats for github profile pages.
 

@@ -158,10 +158,9 @@ async function updateGist(data) {
   lines.push(
     `Last month ${formatDistance(monthDistance).padStart(
       13
-    )} ${(monthAchievements
-      ? `${monthAchievements} achievement${monthAchievements > 1 ? "s" : ""}`
-      : ""
-    ).padStart(19)} ${`${(monthTime / 3600).toFixed(0)}`.padStart(3)}:${(
+    )} 
+    //${(monthAchievements ? `${monthAchievements} achievement${monthAchievements > 1 ? "s" : ""}` : "").padStart(19)}
+    ${`${(monthTime / 3600).toFixed(0)}`.padStart(3)}:${(
       monthTime / 60
     ).toFixed(0) % 60}h`
   );

@@ -156,7 +156,7 @@ async function updateGist(data) {
     }
   }
   lines.push(
-    `Last month ${formatDistance(monthDistance).padStart(
+    `Last month  ${formatDistance(monthDistance).padStart(
       13
     )} ${`${(monthTime / 3600).toFixed(0)}`.padStart(3)}:${(
       monthTime / 60

@@ -90,13 +90,13 @@ async function updateGist(data) {
 
   // Used to index the API response
   const keyMappings = {
-    "‍🏃‍♂️ Running": {
+    "‍🏃‍♂️ Running ": {
       key: "ytd_run_totals"
     },
     "🏊‍♂️ Swimming": {
       key: "ytd_swim_totals"
     },
-    "🚴‍♂️ Cycling": {
+    "🚴‍♂️ Cycling ": {
       key: "ytd_ride_totals"
     }
   };
@@ -183,7 +183,7 @@ async function updateGist(data) {
 
 function generateBarChart(percent, size) {
   //const syms = "░▏▎▍▌▋▊▉█";
-  const syms = "□□◱◱◱▨▨▩▩▩▩■■■";
+  const syms = "□□◱◱◱▨▨▩▩▩■■■";
   const frac = Math.floor((size * 8 * percent) / 100);
   const barsFull = Math.floor(frac / 8);
   if (barsFull >= size) {
